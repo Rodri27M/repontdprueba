@@ -27,5 +27,24 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+/* --- Aportes Daniel --- */
+.section h2 {
+  color: #0d6efd;
+  text-decoration: underline;
+}
+
+.article p {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.btn-ref {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.btn-ref:hover {
+  background-color: #084298;
+}
 
 
