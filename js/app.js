@@ -4,7 +4,10 @@ function mostrarReferencia(indice) {
   const referencias = {
     1: "Karunamurthy, A., Vijayan, K., Kshirsagar, P. R., & Tan, K. T. (2025). An optimal federated learning-based intrusion detection for IoT environment. Scientific Reports, 15(1), 1–15. https://doi.org/10.1038/s41598-025-93501-8",
     2: "Maghrabi, L. A., Subahi, A., Alghanmi, N. A., Althaqafi, T., Abid, N. J., & Ragab, M. (2025). An efficient trustworthy cyberattack defence mechanism system for self guided federated learning framework using attention induced deep convolution neural networks. Scientific Reports, 15(1), 1–20. https://doi.org/10.1038/s41598-025-01561-7",
-    3: "Timofte, E. M., Dimian, M., Graur, A., Potorac, A. D., & Balan, D. (2025). Federated learning for cybersecurity: A privacy-preserving approach. Applied Sciences, 15(12), 6878. https://doi.org/10.3390/app15126878"
+    3: "Timofte, E. M., Dimian, M., Graur, A., Potorac, A. D., & Balan, D. (2025). Federated learning for cybersecurity: A privacy-preserving approach. Applied Sciences, 15(12), 6878. https://doi.org/10.3390/app15126878",
+    4: "López Ferreiro, M. Á., Gil Ruiz, J., García, Ó., & De La Fuente Valentín, L. (2025). Artificial intelligent application in project management: An algorithm comparison for solar plants planning construction. Expert Systems, 42(9), e70105. https://doi.org/10.1111/exsy.70105",
+    5: "Brandao, P. R. (2025). Exploring the role of artificial intelligence in detecting advanced persistent threats. Computers, 14(7), 245. https://doi.org/10.3390/computers14070245",
+    6: "Brandão, P., & Silva, C. (2025). Unveiling the shadows—A framework for APT’s defense AI and game theory strategy. Algorithms, 18(7), 404. https://doi.org/10.3390/a18070404"
   };
   //por si no llegan a tener la referencia simplemente muestra que no esta disponible
   const texto = "Referencia APA:\n\n" + (referencias[indice] || "Referencia no disponible."); 

@@ -1,109 +1,316 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BD pagina web</title>
-  <link rel="stylesheet" href="styles/view.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BD pagina web</title>
+    <link rel="stylesheet" href="styles/view.css" />
+  </head>
+  <body>
+    <!-- 1. header -->
+    <header class="header">
+      <h1>Consulta base de datos</h1>
+    </header>
 
-  <!-- 1. header -->
-  <header class="header">
-    <h1>Consulta base de datos</h1>
-  </header>
+    <!-- 2. main -->
+    <main class="main">
+      <!-- sección: artículos -->
+      <section class="section">
+        <h2>Artículos:</h2>
 
-  <!-- 2. main -->
-  <main class="main">
+        <!-- Artículo 1 -->
+        <article class="article">
+          <h3 class="titulo">
+            An optimal federated learning-based intrusion detection for IoT
+            environment
+          </h3>
+          <p class="resumen">
+            Este artículo propone un modelo de aprendizaje federado óptimo para
+            la detección de intrusiones en entornos IoT. El enfoque mejora la
+            seguridad sin comprometer la privacidad, permitiendo colaboración
+            descentralizada entre dispositivos. Los resultados muestran alta
+            precisión en la detección y reducción de consumo de recursos, lo que
+            lo convierte en una solución escalable para IoT.
+          </p>
+          <p>
+            <a
+              href="https://doi.org/10.1038/s41598-025-93501-8"
+              target="_blank"
+              rel="noopener"
+              >Acceder al DOI</a
+            >
+          </p>
+          <button class="btn-ref" onclick="mostrarReferencia(1)">
+            Ver referencia APA
+          </button>
+        </article>
 
-    <!-- sección: artículos -->
-    <section class="section">
-      <h2>Artículos:</h2>
+        <!-- Artículo 2 -->
+        <article class="article">
+          <h3 class="titulo">
+            An efficient trustworthy cyberattack defence mechanism system for
+            self guided federated learning framework using attention induced
+            deep convolution neural networks
+          </h3>
+          <p class="resumen">
+            Este estudio presenta el sistema CDMFL-AIDCNN, un mecanismo de
+            defensa contra ciberataques basado en aprendizaje federado
+            auto-guiado e integrado con redes convolucionales profundas y
+            mecanismos de atención. Emplea normalización Z-score, selección de
+            características con Dung Beetle Optimization y modelos híbridos (CNN
+            + BiLSTM + GRU + atención). Probado en CIC-IDS-2017 y UNSW-NB15,
+            alcanzó precisiones superiores al 98%, mostrando alta robustez y
+            preservación de la privacidad en sistemas distribuidos.
+          </p>
+          <p>
+            <a
+              href="https://doi.org/10.1038/s41598-025-01561-7"
+              target="_blank"
+              rel="noopener"
+              >Acceder al DOI</a
+            >
+          </p>
+          <button class="btn-ref" onclick="mostrarReferencia(2)">
+            Ver referencia APA
+          </button>
+        </article>
 
-      <!-- Artículo 1 -->
-      <article class="article">
-        <h3 class="titulo">An optimal federated learning-based intrusion detection for IoT environment</h3>
-        <p class="resumen">
-          Este artículo propone un modelo de aprendizaje federado óptimo para la detección de intrusiones en entornos IoT. El enfoque mejora la seguridad sin comprometer la privacidad, permitiendo colaboración descentralizada entre dispositivos. Los resultados muestran alta precisión en la detección y reducción de consumo de recursos, lo que lo convierte en una solución escalable para IoT.
-        </p>
-        <p><a href="https://doi.org/10.1038/s41598-025-93501-8" target="_blank" rel="noopener">Acceder al DOI</a></p>
-        <button class="btn-ref" onclick="mostrarReferencia(1)">Ver referencia APA</button>
-      </article>
+        <!-- Artículo 3 -->
+        <article class="article">
+          <h3 class="titulo">
+            Federated Learning for Cybersecurity: A Privacy-Preserving Approach
+          </h3>
+          <p class="resumen">
+            El trabajo propone un marco de aprendizaje federado para detección
+            de intrusiones y clasificación de malware en infraestructuras
+            distribuidas. Incorpora técnicas de privacidad (differential
+            privacy, gradient clipping, agregación cifrada) y mejora la
+            eficiencia de comunicación. Los experimentos muestran detecciones
+            >90%, pérdida de privacidad <5% y mejoras en la eficiencia de
+            comunicación, validando el FL como opción escalable y segura.
+          </p>
+          <p>
+            <a
+              href="https://doi.org/10.3390/app15126878"
+              target="_blank"
+              rel="noopener"
+              >Acceder al DOI</a
+            >
+          </p>
+          <button class="btn-ref" onclick="mostrarReferencia(3)">
+            Ver referencia APA
+          </button>
+        </article>
 
-      <!-- Artículo 2 -->
-      <article class="article">
-        <h3 class="titulo">An efficient trustworthy cyberattack defence mechanism system for self guided federated learning framework using attention induced deep convolution neural networks</h3>
-        <p class="resumen">
-          Este estudio presenta el sistema CDMFL-AIDCNN, un mecanismo de defensa contra ciberataques basado en aprendizaje federado auto-guiado e integrado con redes convolucionales profundas y mecanismos de atención. Emplea normalización Z-score, selección de características con Dung Beetle Optimization y modelos híbridos (CNN + BiLSTM + GRU + atención). Probado en CIC-IDS-2017 y UNSW-NB15, alcanzó precisiones superiores al 98%, mostrando alta robustez y preservación de la privacidad en sistemas distribuidos.
-        </p>
-        <p><a href="https://doi.org/10.1038/s41598-025-01561-7" target="_blank" rel="noopener">Acceder al DOI</a></p>
-        <button class="btn-ref" onclick="mostrarReferencia(2)">Ver referencia APA</button>
-      </article>
+        <!-- Artículo 4 -->
+        <article class="article">
+          <h3 class="titulo">
+            Artificial Intelligent Application in Project Management: An
+            Algorithm Comparison for Solar Plants Planning Construction
+          </h3>
+          <p class="resumen">
+            La planificación de la construcción es una fase crítica y compleja
+            en el despliegue de infraestructuras de energía renovable a gran
+            escala. Este estudio aplica técnicas de inteligencia artificial a un
+            problema específico que tradicionalmente ha dependido del criterio
+            de expertos: la generación de cronogramas de construcción detallados
+            para plantas fotovoltaicas. Dado que la generación renovable es
+            clave para afrontar los retos de la transición energética, la
+            ejecución de grandes proyectos ha aumentado en los últimos años y se
+            prevé que esta tendencia continúe en el futuro. La principal
+            dificultad para cumplir con los plazos de construcción reside en la
+            elaboración de una planificación adecuada. Una herramienta que
+            genere cronogramas automáticamente puede ser de gran ayuda para
+            establecer una planificación base inicial. Para ello, este trabajo
+            compara cinco técnicas de inteligencia artificial con un conjunto de
+            datos compuesto por ejemplos reales de proyectos finalizados con
+            éxito. La evaluación de los resultados obtenidos con datos de prueba
+            muestra que el Sistema de Inferencia Neurodifusa Adaptativa (ANFIS)
+            es la técnica que obtiene el mejor rendimiento en todas las métricas
+            de error, aunque conlleva un alto coste computacional.
+          </p>
+          <p>
+            <a
+              href="https://doi.org/10.1111/exsy.70105"
+              target="_blank"
+              rel="noopener"
+              >Acceder al DOI</a
+            >
+          </p>
+          <button class="btn-ref" onclick="mostrarReferencia(4)">
+            Ver referencia APA
+          </button>
+        </article>
 
-      <!-- Artículo 3 -->
-      <article class="article">
-        <h3 class="titulo">Federated Learning for Cybersecurity: A Privacy-Preserving Approach</h3>
-        <p class="resumen">
-          El trabajo propone un marco de aprendizaje federado para detección de intrusiones y clasificación de malware en infraestructuras distribuidas. Incorpora técnicas de privacidad (differential privacy, gradient clipping, agregación cifrada) y mejora la eficiencia de comunicación. Los experimentos muestran detecciones >90%, pérdida de privacidad <5% y mejoras en la eficiencia de comunicación, validando el FL como opción escalable y segura.
-        </p>
-        <p><a href="https://doi.org/10.3390/app15126878" target="_blank" rel="noopener">Acceder al DOI</a></p>
-        <button class="btn-ref" onclick="mostrarReferencia(3)">Ver referencia APA</button>
-      </article>
-    </section>
+        <!-- Artículo 5 -->
+        <article class="article">
+          <h3 class="titulo">
+            Exploring the Role of Artificial Intelligence in Detecting Advanced
+            Persistent Threats
+          </h3>
+          <p class="resumen">
+            La rápida evolución de las ciberamenazas, en particular las Amenazas
+            Persistentes Avanzadas (APT), plantea importantes desafíos para la
+            seguridad de los sistemas de información. Este artículo explora el
+            papel fundamental de la Inteligencia Artificial (IA) en la mejora de
+            la detección y mitigación de las APT. Al aprovechar algoritmos de
+            aprendizaje automático y el análisis de datos, los sistemas de IA
+            pueden identificar patrones y anomalías que indican ciberataques
+            sofisticados. Este estudio examina diversas metodologías basadas en
+            IA, como la detección de anomalías, el análisis predictivo y los
+            sistemas de respuesta automatizada, destacando su eficacia en la
+            detección y respuesta ante amenazas en tiempo real.
+          </p>
+          <p>
+            <a
+              href="https://doi.org/10.3390/computers14070245"
+              target="_blank"
+              rel="noopener"
+              >Acceder al DOI</a
+            >
+          </p>
+          <button class="btn-ref" onclick="mostrarReferencia(5)">
+            Ver referencia APA
+          </button>
+        </article>
 
-    <!-- tabla bibliográfica -->
-    <section class="section">
-      <h2>Datos de la búsqueda</h2>
+        <!-- Artículo 6 -->
+        <article class="article">
+          <h3 class="titulo">
+            Unveiling the Shadows—A Framework for APT’s Defense AI and Game
+            Theory Strategy
+          </h3>
+          <p class="resumen">
+            Las amenazas persistentes avanzadas (APT) representan riesgos
+            significativos para sistemas e infraestructuras críticos debido a su
+            sigilo y persistencia. Si bien varios estudios han analizado las
+            características y los mecanismos de defensa de las APT, este
+            artículo va más allá al proponer un marco de defensa híbrido basado
+            en inteligencia artificial y teoría de juegos. Primero, una revisión
+            bibliográfica describe la evolución, las metodologías y los
+            incidentes conocidos de las APT.
+          </p>
+          <p>
+            <a
+              href="https://doi.org/10.3390/a18070404"
+              target="_blank"
+              rel="noopener"
+              >Acceder al DOI</a
+            >
+          </p>
+          <button class="btn-ref" onclick="mostrarReferencia(6)">
+            Ver referencia APA
+          </button>
+        </article>
+      </section>
 
-      <table class="tabla">
-        <tr>
-          <th>Nombre del estudiante</th>
-          <td>Juan Pablo Velásquez Hernández</td>
-        </tr>
-        <tr>
-          <th>Base de datos</th>
-          <td>Scopus</td>
-        </tr>
-        <tr>
+      <!-- tabla bibliográfica -->
+      <section class="section">
+        <h2>Datos de la búsqueda</h2>
+
+        <table class="tabla">
+          <tr>
+            <th>Nombre del estudiante</th>
+            <td>Juan Pablo Velásquez Hernández</td>
+          </tr>
+          <tr>
+            <th>Base de datos</th>
+            <td>Scopus</td>
+          </tr>
+          <tr>
             <th>Cadena de consulta</th>
-            <td> ( ( "artificial intelligence" OR "machine learning" OR "deep learning" ) AND cybersecurity AND "distributed systems" ) AND PUBYEAR > 2022 AND PUBYEAR < 2026 </td>
-        </tr>
-        <tr>
-          <th>Cantidad de documentos</th>
-          <td>46</td>
-        </tr>
-      </table>
+            <td>
+              ( ( "artificial intelligence" OR "machine learning" OR "deep
+              learning" ) AND cybersecurity AND "distributed systems" ) AND
+              PUBYEAR > 2022 AND PUBYEAR < 2026
+            </td>
+          </tr>
+          <tr>
+            <th>Cantidad de documentos</th>
+            <td>46</td>
+          </tr>
+        </table>
 
-      <h3 style="margin-top:1rem;">Referencias (APA)</h3> <!-- estilos locales para la tabla -->
-      <table class="tabla" style="margin-top:0.5rem;">
-        <tr>
-          <th>Título</th>
-          <th>Información bibliográfica</th>
-        </tr>
-        <tr>
-          <td>An optimal federated learning-based intrusion detection for IoT environment</td>
-          <td>Karunamurthy, A., Vijayan, K., Kshirsagar, P. R., &amp; Tan, K. T. (2025). An optimal federated learning-based intrusion detection for IoT environment. <em>Scientific Reports, 15</em>(1), 1–15. <a href="https://doi.org/10.1038/s41598-025-93501-8" target="_blank" rel="noopener">https://doi.org/10.1038/s41598-025-93501-8</a></td>
-        </tr>
-        <tr>
-          <td>An efficient trustworthy cyberattack defence mechanism system for self guided federated learning framework using attention induced deep convolution neural networks</td>
-          <td>Maghrabi, L. A., Subahi, A., Alghanmi, N. A., Althaqafi, T., Abid, N. J., &amp; Ragab, M. (2025). An efficient trustworthy cyberattack defence mechanism system for self guided federated learning framework using attention induced deep convolution neural networks. <em>Scientific Reports, 15</em>(1), 1–20. <a href="https://doi.org/10.1038/s41598-025-01561-7" target="_blank" rel="noopener">https://doi.org/10.1038/s41598-025-01561-7</a></td>
-        </tr>
-        <tr>
-          <td>Federated Learning for Cybersecurity: A Privacy-Preserving Approach</td>
-          <td>Timofte, E. M., Dimian, M., Graur, A., Potorac, A. D., &amp; Balan, D. (2025). Federated learning for cybersecurity: A privacy-preserving approach. <em>Applied Sciences, 15</em>(12), 6878. <a href="https://doi.org/10.3390/app15126878" target="_blank" rel="noopener">https://doi.org/10.3390/app15126878</a></td>
-        </tr>
-      </table>
-    </section>
+        <h3 style="margin-top: 1rem">Referencias (APA)</h3>
+        <!-- estilos locales para la tabla -->
+        <table class="tabla" style="margin-top: 0.5rem">
+          <tr>
+            <th>Título</th>
+            <th>Información bibliográfica</th>
+          </tr>
+          <tr>
+            <td>
+              An optimal federated learning-based intrusion detection for IoT
+              environment
+            </td>
+            <td>
+              Karunamurthy, A., Vijayan, K., Kshirsagar, P. R., &amp; Tan, K. T.
+              (2025). An optimal federated learning-based intrusion detection
+              for IoT environment. <em>Scientific Reports, 15</em>(1), 1–15.
+              <a
+                href="https://doi.org/10.1038/s41598-025-93501-8"
+                target="_blank"
+                rel="noopener"
+                >https://doi.org/10.1038/s41598-025-93501-8</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              An efficient trustworthy cyberattack defence mechanism system for
+              self guided federated learning framework using attention induced
+              deep convolution neural networks
+            </td>
+            <td>
+              Maghrabi, L. A., Subahi, A., Alghanmi, N. A., Althaqafi, T., Abid,
+              N. J., &amp; Ragab, M. (2025). An efficient trustworthy
+              cyberattack defence mechanism system for self guided federated
+              learning framework using attention induced deep convolution neural
+              networks. <em>Scientific Reports, 15</em>(1), 1–20.
+              <a
+                href="https://doi.org/10.1038/s41598-025-01561-7"
+                target="_blank"
+                rel="noopener"
+                >https://doi.org/10.1038/s41598-025-01561-7</a
+              >
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Federated Learning for Cybersecurity: A Privacy-Preserving
+              Approach
+            </td>
+            <td>
+              Timofte, E. M., Dimian, M., Graur, A., Potorac, A. D., &amp;
+              Balan, D. (2025). Federated learning for cybersecurity: A
+              privacy-preserving approach. <em>Applied Sciences, 15</em>(12),
+              6878.
+              <a
+                href="https://doi.org/10.3390/app15126878"
+                target="_blank"
+                rel="noopener"
+                >https://doi.org/10.3390/app15126878</a
+              >
+            </td>
+          </tr>
+        </table>
+      </section>
+    </main>
 
-  </main>
+    <!-- 5. footer -->
+    <footer class="footer">
+      <p>
+        Septiembre 2025 — estudiantes: Juan Pablo Velásquez Hernández, Daniel,
+        Rodrigo
+      </p>
+      <button class="btn-color" onclick="cambiarFondo()">
+        Cambiar color de fondo
+      </button>
+      <button class="btn-msg" onclick="mostrarMensaje()">
+        Mostrar mensaje
+      </button>
+    </footer>
 
-  <!-- 5. footer -->
-  <footer class="footer">
-    <p> Septiembre 2025 — estudiantes: Juan Pablo Velásquez Hernández, Daniel, Rodrigo</p>
-    <button class="btn-color" onclick="cambiarFondo()">Cambiar color de fondo</button>
-    <button class="btn-msg" onclick="mostrarMensaje()">Mostrar mensaje</button>
-  </footer>
-
-  <script src="js/app.js"></script>
-</body>
+    <script src="js/app.js"></script>
+  </body>
 </html>
