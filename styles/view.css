@@ -46,5 +46,32 @@ button {
 .btn-ref:hover {
   background-color: #084298;
 }
+  /*-- Rodri --*/
+.estilo {
+  min-width: 100%; 
+  box-sizing: border-box;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+   
+}
+.carrusel {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden; 
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.carrusel-contenido {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  width: 100%; 
+}
 
-
+.titulo-carrusel{
+  font-size: 1.4rem;   
+  font-weight: bold;   
+  color: #04205a;       
+  margin-bottom: 10px; 
+}

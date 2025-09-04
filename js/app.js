@@ -52,3 +52,23 @@ function toggleMisArticulos() {
     seccion.style.display = "none";
   }
 }
+// Rodrigo: 
+  let indice = 0;
+function carrusel(){
+   const carrusel = document.querySelector(".carrusel-contenido");
+   const articulos = document.querySelectorAll(".estilo");
+   const total = articulos.length;
+    if (!carrusel || total === 0) {
+    console.error("No se encontró el carrusel o no hay artículos.");
+    return;
+    }
+   carrusel.style.transform = `translateX(-${indice * 100}%)`;
+   indice = (indice + 1)%total;
+  //const articulos = document.querySelectorAll(".estilo");
+  //articulos.forEach(art => art.style.display = "nome");
+  //articulos[indice].style.display = "block"
+  //indice = (indice + 1) % articulos.length;
+  
+}
+//carrusel();
+  setInterval(carrusel, 5000);

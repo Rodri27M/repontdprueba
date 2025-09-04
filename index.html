@@ -1,413 +1,439 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BD pagina web</title>
-    <link rel="stylesheet" href="styles/view.css" />
-  </head>
-  <body>
-    <!-- 1. header -->
-    <header class="header">
-      <h1>Consulta base de datos</h1>
-    </header>
 
-    <!-- 2. main -->
-    <main class="main">
-      <!-- sección: artículos -->
-      <section class="section">
-        <h2>Artículos:</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BD pagina web</title>
+  <link rel="stylesheet" href="styles/view.css" />
+</head>
 
-        <!-- Artículo 1 -->
-        <article class="article">
-          <h3 class="titulo">
+<body>
+  <!-- 1. header -->
+  <header class="header">
+    <h1>Consulta base de datos</h1>
+  </header>
+
+  <!-- 2. main -->
+  <main class="main">
+    <!-- sección: artículos -->
+    <section class="section">
+      <h2>Artículos:</h2>
+
+      <!-- Artículo 1 -->
+      <article class="article">
+        <h3 class="titulo">
+          An optimal federated learning-based intrusion detection for IoT
+          environment
+        </h3>
+        <p class="resumen">
+          Este artículo propone un modelo de aprendizaje federado óptimo para
+          la detección de intrusiones en entornos IoT. El enfoque mejora la
+          seguridad sin comprometer la privacidad, permitiendo colaboración
+          descentralizada entre dispositivos. Los resultados muestran alta
+          precisión en la detección y reducción de consumo de recursos, lo que
+          lo convierte en una solución escalable para IoT.
+        </p>
+        <p>
+          <a href="https://doi.org/10.1038/s41598-025-93501-8" target="_blank" rel="noopener">Acceder al DOI</a>
+        </p>
+        <button class="btn-ref" onclick="mostrarReferencia(1)">
+          Ver referencia APA
+        </button>
+      </article>
+
+      <!-- Artículo 2 -->
+      <article class="article">
+        <h3 class="titulo">
+          An efficient trustworthy cyberattack defence mechanism system for
+          self guided federated learning framework using attention induced
+          deep convolution neural networks
+        </h3>
+        <p class="resumen">
+          Este estudio presenta el sistema CDMFL-AIDCNN, un mecanismo de
+          defensa contra ciberataques basado en aprendizaje federado
+          auto-guiado e integrado con redes convolucionales profundas y
+          mecanismos de atención. Emplea normalización Z-score, selección de
+          características con Dung Beetle Optimization y modelos híbridos (CNN
+          + BiLSTM + GRU + atención). Probado en CIC-IDS-2017 y UNSW-NB15,
+          alcanzó precisiones superiores al 98%, mostrando alta robustez y
+          preservación de la privacidad en sistemas distribuidos.
+        </p>
+        <p>
+          <a href="https://doi.org/10.1038/s41598-025-01561-7" target="_blank" rel="noopener">Acceder al DOI</a>
+        </p>
+        <button class="btn-ref" onclick="mostrarReferencia(2)">
+          Ver referencia APA
+        </button>
+      </article>
+
+      <!-- Artículo 3 -->
+      <article class="article">
+        <h3 class="titulo">
+          Federated Learning for Cybersecurity: A Privacy-Preserving Approach
+        </h3>
+        <p class="resumen">
+          El trabajo propone un marco de aprendizaje federado para detección
+          de intrusiones y clasificación de malware en infraestructuras
+          distribuidas. Incorpora técnicas de privacidad (differential
+          privacy, gradient clipping, agregación cifrada) y mejora la
+          eficiencia de comunicación. Los experimentos muestran detecciones
+          >90%, pérdida de privacidad <5% y mejoras en la eficiencia de comunicación, validando el FL como opción
+            escalable y segura. </p>
+            <p>
+              <a href="https://doi.org/10.3390/app15126878" target="_blank" rel="noopener">Acceder al DOI</a>
+            </p>
+            <button class="btn-ref" onclick="mostrarReferencia(3)">
+              Ver referencia APA
+            </button>
+      </article>
+
+      <!-- 
+        Rodri
+        Artículo 4 -->
+      <h2 class="section">Articulos relacionados con la IA</h2>
+      <div class="carrusel">
+        <div class="carrusel-contenido">
+          <article class="estilo">
+            <h3 class="titulo-carrusel">
+              Artificial Intelligent Application in Project Management: An
+              Algorithm Comparison for Solar Plants Planning Construction
+            </h3>
+            <p class="resumen">
+              La planificación de la construcción es una fase crítica y compleja
+              en el despliegue de infraestructuras de energía renovable a gran
+              escala. Este estudio aplica técnicas de inteligencia artificial a un
+              problema específico que tradicionalmente ha dependido del criterio
+              de expertos: la generación de cronogramas de construcción detallados
+              para plantas fotovoltaicas. Dado que la generación renovable es
+              clave para afrontar los retos de la transición energética, la
+              ejecución de grandes proyectos ha aumentado en los últimos años y se
+              prevé que esta tendencia continúe en el futuro. La principal
+              dificultad para cumplir con los plazos de construcción reside en la
+              elaboración de una planificación adecuada. Una herramienta que
+              genere cronogramas automáticamente puede ser de gran ayuda para
+              establecer una planificación base inicial. Para ello, este trabajo
+              compara cinco técnicas de inteligencia artificial con un conjunto de
+              datos compuesto por ejemplos reales de proyectos finalizados con
+              éxito. La evaluación de los resultados obtenidos con datos de prueba
+              muestra que el Sistema de Inferencia Neurodifusa Adaptativa (ANFIS)
+              es la técnica que obtiene el mejor rendimiento en todas las métricas
+              de error, aunque conlleva un alto coste computacional.
+            </p>
+            <p>
+              <a href="https://doi.org/10.1111/exsy.70105" target="_blank" rel="noopener">Acceder al DOI</a>
+            </p>
+            <button class="btn-ref" onclick="mostrarReferencia(4)">
+              Ver referencia APA
+            </button>
+          </article>
+
+          <!-- Artículo 5 -->
+          <article class="estilo">
+            <h3 class="titulo-carrusel">
+              Exploring the Role of Artificial Intelligence in Detecting Advanced
+              Persistent Threats
+            </h3>
+            <p class="resumen">
+              La rápida evolución de las ciberamenazas, en particular las Amenazas
+              Persistentes Avanzadas (APT), plantea importantes desafíos para la
+              seguridad de los sistemas de información. Este artículo explora el
+              papel fundamental de la Inteligencia Artificial (IA) en la mejora de
+              la detección y mitigación de las APT. Al aprovechar algoritmos de
+              aprendizaje automático y el análisis de datos, los sistemas de IA
+              pueden identificar patrones y anomalías que indican ciberataques
+              sofisticados. Este estudio examina diversas metodologías basadas en
+              IA, como la detección de anomalías, el análisis predictivo y los
+              sistemas de respuesta automatizada, destacando su eficacia en la
+              detección y respuesta ante amenazas en tiempo real.
+            </p>
+            <p>
+              <a href="https://doi.org/10.3390/computers14070245" target="_blank" rel="noopener">Acceder al DOI</a>
+            </p>
+            <button class="btn-ref" onclick="mostrarReferencia(5)">
+              Ver referencia APA
+            </button>
+          </article>
+
+          <!-- Artículo 6 -->
+          <article class="estilo">
+            <h3 class="titulo-carrusel">
+              Unveiling the Shadows—A Framework for APT’s Defense AI and Game
+              Theory Strategy
+            </h3>
+            <p class="resumen">
+              Las amenazas persistentes avanzadas (APT) representan riesgos
+              significativos para sistemas e infraestructuras críticos debido a su
+              sigilo y persistencia. Si bien varios estudios han analizado las
+              características y los mecanismos de defensa de las APT, este
+              artículo va más allá al proponer un marco de defensa híbrido basado
+              en inteligencia artificial y teoría de juegos. Primero, una revisión
+              bibliográfica describe la evolución, las metodologías y los
+              incidentes conocidos de las APT.
+            </p>
+            <p>
+              <a href="https://doi.org/10.3390/a18070404" target="_blank" rel="noopener">Acceder al DOI</a>
+            </p>
+            <button class="btn-ref" onclick="mostrarReferencia(6)">
+              Ver referencia APA
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+    <!-- Sección: Aportes de Daniel Felipe Grisales -->
+    <section class="section">
+      <h2>Más artículos seleccionados</h2>
+
+      <!-- Artículo 1 -->
+      <article class="article">
+        <h3 class="titulo">Smartphone-based polyp detection</h3>
+        <p class="resumen">
+          Uso de IA y smartphones para detección de pólipos colorrectales mediante un marco de código abierto accesible.
+        </p>
+        <p><b>Autores:</b> Kim, Y. B. (2025)</p>
+        <p><b>Fuente:</b> Journal of Medical Artificial Intelligence</p>
+        <p><b>Palabras clave:</b> AI, Endoscopy, Polyp Detection</p>
+        <button class="btn-ref" onclick="mostrarReferenciaDaniel(1)">Ver referencia APA</button>
+      </article>
+
+      <!-- Artículo 2 -->
+      <article class="article">
+        <h3 class="titulo">Effects of AI assistance on endoscopist performance</h3>
+        <p class="resumen">
+          Análisis de cómo la IA mejora la precisión en la detección de carcinoma esofágico superficial mediante modelos
+          basados en video.
+        </p>
+        <p><b>Autores:</b> Aoyama, N., Nakajo, K., Sasabe, M., Inaba, A., Nakanishi, Y., Seno, H., & Yano, T. (2026)</p>
+        <p><b>Fuente:</b> DEN Open</p>
+        <p><b>Palabras clave:</b> AI, Esophageal Cancer, Endoscopy</p>
+        <button class="btn-ref" onclick="mostrarReferenciaDaniel(2)">Ver referencia APA</button>
+      </article>
+
+      <!-- Artículo 3 -->
+      <article class="article">
+        <h3 class="titulo">AI-assisted Endoscopy and Examiner Confidence</h3>
+        <p class="resumen">
+          Estudio de la interacción humano-IA y la confianza de los examinadores en la endoscopia del esófago de
+          Barrett.
+        </p>
+        <p><b>Autores:</b> Roser, D., Meinikheim, M., Muzalyova, A., et al. (2026)</p>
+        <p><b>Fuente:</b> DEN Open</p>
+        <p><b>Palabras clave:</b> AI, Barrett’s Esophagus, Human-AI Interaction</p>
+        <button class="btn-ref" onclick="mostrarReferenciaDaniel(3)">Ver referencia APA</button>
+      </article>
+
+      <!-- Botones extra -->
+      <button class="btn-color" onclick="contarMisArticulos()">Contar mis artículos</button>
+      <button class="btn-msg" onclick="toggleMisArticulos()">Mostrar/Ocultar mis artículos</button>
+    </section>
+    <!-- tabla bibliográfica -->
+    <section class="section">
+      <h2>Datos de la búsqueda</h2>
+
+      <table class="tabla">
+        <tr>
+          <th>Nombre del estudiante</th>
+          <td>Juan Pablo Velásquez Hernández</td>
+        </tr>
+        <tr>
+          <th>Base de datos</th>
+          <td>Scopus</td>
+        </tr>
+        <tr>
+          <th>Cadena de consulta</th>
+          <td>
+            ( ( "artificial intelligence" OR "machine learning" OR "deep
+            learning" ) AND cybersecurity AND "distributed systems" ) AND
+            PUBYEAR > 2022 AND PUBYEAR < 2026 </td>
+        </tr>
+        <tr>
+          <th>Cantidad de documentos</th>
+          <td>46</td>
+        </tr>
+      </table>
+
+      <h3 style="margin-top: 1rem">Referencias (APA)</h3>
+      <!-- estilos locales para la tabla -->
+      <table class="tabla" style="margin-top: 0.5rem">
+        <tr>
+          <th>Título</th>
+          <th>Información bibliográfica</th>
+        </tr>
+        <tr>
+          <td>
             An optimal federated learning-based intrusion detection for IoT
             environment
-          </h3>
-          <p class="resumen">
-            Este artículo propone un modelo de aprendizaje federado óptimo para
-            la detección de intrusiones en entornos IoT. El enfoque mejora la
-            seguridad sin comprometer la privacidad, permitiendo colaboración
-            descentralizada entre dispositivos. Los resultados muestran alta
-            precisión en la detección y reducción de consumo de recursos, lo que
-            lo convierte en una solución escalable para IoT.
-          </p>
-          <p>
-            <a
-              href="https://doi.org/10.1038/s41598-025-93501-8"
-              target="_blank"
-              rel="noopener"
-              >Acceder al DOI</a
-            >
-          </p>
-          <button class="btn-ref" onclick="mostrarReferencia(1)">
-            Ver referencia APA
-          </button>
-        </article>
-
-        <!-- Artículo 2 -->
-        <article class="article">
-          <h3 class="titulo">
+          </td>
+          <td>
+            Karunamurthy, A., Vijayan, K., Kshirsagar, P. R., &amp; Tan, K. T.
+            (2025). An optimal federated learning-based intrusion detection
+            for IoT environment. <em>Scientific Reports, 15</em>(1), 1–15.
+            <a href="https://doi.org/10.1038/s41598-025-93501-8" target="_blank"
+              rel="noopener">https://doi.org/10.1038/s41598-025-93501-8</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
             An efficient trustworthy cyberattack defence mechanism system for
             self guided federated learning framework using attention induced
             deep convolution neural networks
-          </h3>
-          <p class="resumen">
-            Este estudio presenta el sistema CDMFL-AIDCNN, un mecanismo de
-            defensa contra ciberataques basado en aprendizaje federado
-            auto-guiado e integrado con redes convolucionales profundas y
-            mecanismos de atención. Emplea normalización Z-score, selección de
-            características con Dung Beetle Optimization y modelos híbridos (CNN
-            + BiLSTM + GRU + atención). Probado en CIC-IDS-2017 y UNSW-NB15,
-            alcanzó precisiones superiores al 98%, mostrando alta robustez y
-            preservación de la privacidad en sistemas distribuidos.
-          </p>
-          <p>
-            <a
-              href="https://doi.org/10.1038/s41598-025-01561-7"
-              target="_blank"
-              rel="noopener"
-              >Acceder al DOI</a
-            >
-          </p>
-          <button class="btn-ref" onclick="mostrarReferencia(2)">
-            Ver referencia APA
-          </button>
-        </article>
+          </td>
+          <td>
+            Maghrabi, L. A., Subahi, A., Alghanmi, N. A., Althaqafi, T., Abid,
+            N. J., &amp; Ragab, M. (2025). An efficient trustworthy
+            cyberattack defence mechanism system for self guided federated
+            learning framework using attention induced deep convolution neural
+            networks. <em>Scientific Reports, 15</em>(1), 1–20.
+            <a href="https://doi.org/10.1038/s41598-025-01561-7" target="_blank"
+              rel="noopener">https://doi.org/10.1038/s41598-025-01561-7</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Federated Learning for Cybersecurity: A Privacy-Preserving
+            Approach
+          </td>
+          <td>
+            Timofte, E. M., Dimian, M., Graur, A., Potorac, A. D., &amp;
+            Balan, D. (2025). Federated learning for cybersecurity: A
+            privacy-preserving approach. <em>Applied Sciences, 15</em>(12),
+            6878.
+            <a href="https://doi.org/10.3390/app15126878" target="_blank"
+              rel="noopener">https://doi.org/10.3390/app15126878</a>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <!--Rodri-->
+    <section class="section">
+      <h2>Cadena de Busqueda</h2>
+      <table class="tabla">
+        <tr>
+          <th>Nombre del estudiante</th>
+          <td>Rodrigo Muñoz Andrade</td>
+        </tr>
+        <tr>
+          <th>Base de datos</th>
+          <td>Scopus</td>
+        </tr>
+        <tr>
+          <th>Cadena de consulta</th>
+          <td>TITLE-ABS-KEY ( history OR evolution of AI AND algorithms ) AND ( LIMIT-TO ( DOCTYPE , "ar" ) ) AND (
+            LIMIT-TO ( EXACTKEYWORD , "Artificial Intelligence" ) OR LIMIT-TO ( EXACTKEYWORD , "Algorithm" ) ) AND (
+            LIMIT-TO ( SUBJAREA , "COMP" ) )</td>
+        </tr>
+        <tr>
+          <th>Cantidad de documentos</th>
+          <td>222</td>
+        </tr>
+      </table>
+      <h3 style="margin-top: 1rem">Referencias (APA)</h3>
+      <table class="tabla" style="margin-top: 0.5rem">
+        <tr>
+          <th>Título</th>
+          <th>Información bibliográfica</th>
+        </tr>
+        <tr>
+          <td>Artificial Intelligent Application in Project Management: An Algorithm Comparison for Solar Plants Planning Construction </td>
+          <td>
+            López Ferreiro, M. Á., Gil Ruiz, J., García, Ó., & De La Fuente Valentín, L. (2025). Artificial intelligent application in project management: An algorithm comparison for solar plants planning construction. Expert Systems, 42(9), e70105
+            <a href="https://doi.org/10.1111/exsy.70105" target="_blank">https://doi.org/10.1111/exsy.70105</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Exploring the Role of Artificial Intelligence in Detecting Advanced Persistent Threats </td>
+          <td>
+            Brandao, P. R. (2025). Exploring the role of artificial intelligence in detecting advanced persistent threats. Computers, 14(7), 245.
+            <a href="hhttps://doi.org/10.3390/computers14070245" target="_blank">https://doi.org/10.3390/computers14070245</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Unveiling the Shadows—A Framework for APT’s Defense AI and Game Theory Strategy </td>
+          <td>
+            Brandão, P., & Silva, C. (2025). Unveiling the shadows—A framework for APT’s defense AI and game theory strategy. Algorithms, 18(7), 404.
+            <a href="https://doi.org/10.3390/a18070404" target="_blank">https://doi.org/10.3390/a18070404</a>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <!-- tabla bibliográfica de Daniel -->
+    <section class="section">
+      <h2>Datos de la búsqueda</h2>
 
-        <!-- Artículo 3 -->
-        <article class="article">
-          <h3 class="titulo">
-            Federated Learning for Cybersecurity: A Privacy-Preserving Approach
-          </h3>
-          <p class="resumen">
-            El trabajo propone un marco de aprendizaje federado para detección
-            de intrusiones y clasificación de malware en infraestructuras
-            distribuidas. Incorpora técnicas de privacidad (differential
-            privacy, gradient clipping, agregación cifrada) y mejora la
-            eficiencia de comunicación. Los experimentos muestran detecciones
-            >90%, pérdida de privacidad <5% y mejoras en la eficiencia de
-            comunicación, validando el FL como opción escalable y segura.
-          </p>
-          <p>
-            <a
-              href="https://doi.org/10.3390/app15126878"
-              target="_blank"
-              rel="noopener"
-              >Acceder al DOI</a
-            >
-          </p>
-          <button class="btn-ref" onclick="mostrarReferencia(3)">
-            Ver referencia APA
-          </button>
-        </article>
+      <table class="tabla">
+        <tr>
+          <th>Nombre del estudiante</th>
+          <td>Daniel Felipe Grisales Corredor</td>
+        </tr>
+        <tr>
+          <th>Base de datos</th>
+          <td>Scopus</td>
+        </tr>
+        <tr>
+          <th>Cadena de consulta</th>
+          <td>TITLE-ABS-KEY("AI VIDEO") AND (LIMIT-TO(DOCTYPE,"ar"))</td>
+        </tr>
+        <tr>
+          <th>Cantidad de documentos</th>
+          <td>3605</td>
+        </tr>
+      </table>
 
-        <!-- Artículo 4 -->
-        <article class="article">
-          <h3 class="titulo">
-            Artificial Intelligent Application in Project Management: An
-            Algorithm Comparison for Solar Plants Planning Construction
-          </h3>
-          <p class="resumen">
-            La planificación de la construcción es una fase crítica y compleja
-            en el despliegue de infraestructuras de energía renovable a gran
-            escala. Este estudio aplica técnicas de inteligencia artificial a un
-            problema específico que tradicionalmente ha dependido del criterio
-            de expertos: la generación de cronogramas de construcción detallados
-            para plantas fotovoltaicas. Dado que la generación renovable es
-            clave para afrontar los retos de la transición energética, la
-            ejecución de grandes proyectos ha aumentado en los últimos años y se
-            prevé que esta tendencia continúe en el futuro. La principal
-            dificultad para cumplir con los plazos de construcción reside en la
-            elaboración de una planificación adecuada. Una herramienta que
-            genere cronogramas automáticamente puede ser de gran ayuda para
-            establecer una planificación base inicial. Para ello, este trabajo
-            compara cinco técnicas de inteligencia artificial con un conjunto de
-            datos compuesto por ejemplos reales de proyectos finalizados con
-            éxito. La evaluación de los resultados obtenidos con datos de prueba
-            muestra que el Sistema de Inferencia Neurodifusa Adaptativa (ANFIS)
-            es la técnica que obtiene el mejor rendimiento en todas las métricas
-            de error, aunque conlleva un alto coste computacional.
-          </p>
-          <p>
-            <a
-              href="https://doi.org/10.1111/exsy.70105"
-              target="_blank"
-              rel="noopener"
-              >Acceder al DOI</a
-            >
-          </p>
-          <button class="btn-ref" onclick="mostrarReferencia(4)">
-            Ver referencia APA
-          </button>
-        </article>
+      <h3 style="margin-top: 1rem">Referencias (APA)</h3>
+      <table class="tabla" style="margin-top: 0.5rem">
+        <tr>
+          <th>Título</th>
+          <th>Información bibliográfica</th>
+        </tr>
+        <tr>
+          <td>Smartphone-based polyp detection: a first step towards an open-source AI framework</td>
+          <td>
+            Kim, Y. B. (2025). Smartphone-based polyp detection: a first step towards an open-source AI framework.
+            <em>Journal of Medical Artificial Intelligence, 8</em>, 49.
+            <a href="https://doi.org/10.21037/jmai-24-310" target="_blank">https://doi.org/10.21037/jmai-24-310</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Effects of artificial intelligence assistance on endoscopist performance</td>
+          <td>
+            Aoyama, N., Nakajo, K., Sasabe, M., Inaba, A., Nakanishi, Y., Seno, H., & Yano, T. (2026). Effects of
+            artificial intelligence assistance on endoscopist performance: Comparison of diagnostic performance in
+            superficial esophageal squamous cell carcinoma detection using video-based models. <em>DEN Open, 6</em>(1),
+            e70083.
+            <a href="https://doi.org/10.1002/deo2.70083" target="_blank">https://doi.org/10.1002/deo2.70083</a>
+          </td>
+        </tr>
+        <tr>
+          <td>Artificial Intelligence-assisted Endoscopy and Examiner Confidence</td>
+          <td>
+            Roser, D., Meinikheim, M., Muzalyova, A., Mendel, R., Palm, C., Probst, A., Nagl, S., Scheppach, M. W.,
+            Römmele, C., Schnoy, E., Parsa, N., Byrne, M. F., Messmann, H., & Ebigbo, A. (2026). Artificial
+            Intelligence-assisted Endoscopy and Examiner Confidence: A Study on Human–Artificial Intelligence
+            Interaction in Barrett’s Esophagus. <em>DEN Open, 6</em>(1), e70150.
+            <a href="https://doi.org/10.1002/deo2.70150" target="_blank">https://doi.org/10.1002/deo2.70150</a>
+          </td>
+        </tr>
+      </table>
+    </section>
 
-        <!-- Artículo 5 -->
-        <article class="article">
-          <h3 class="titulo">
-            Exploring the Role of Artificial Intelligence in Detecting Advanced
-            Persistent Threats
-          </h3>
-          <p class="resumen">
-            La rápida evolución de las ciberamenazas, en particular las Amenazas
-            Persistentes Avanzadas (APT), plantea importantes desafíos para la
-            seguridad de los sistemas de información. Este artículo explora el
-            papel fundamental de la Inteligencia Artificial (IA) en la mejora de
-            la detección y mitigación de las APT. Al aprovechar algoritmos de
-            aprendizaje automático y el análisis de datos, los sistemas de IA
-            pueden identificar patrones y anomalías que indican ciberataques
-            sofisticados. Este estudio examina diversas metodologías basadas en
-            IA, como la detección de anomalías, el análisis predictivo y los
-            sistemas de respuesta automatizada, destacando su eficacia en la
-            detección y respuesta ante amenazas en tiempo real.
-          </p>
-          <p>
-            <a
-              href="https://doi.org/10.3390/computers14070245"
-              target="_blank"
-              rel="noopener"
-              >Acceder al DOI</a
-            >
-          </p>
-          <button class="btn-ref" onclick="mostrarReferencia(5)">
-            Ver referencia APA
-          </button>
-        </article>
+  </main>
 
-        <!-- Artículo 6 -->
-        <article class="article">
-          <h3 class="titulo">
-            Unveiling the Shadows—A Framework for APT’s Defense AI and Game
-            Theory Strategy
-          </h3>
-          <p class="resumen">
-            Las amenazas persistentes avanzadas (APT) representan riesgos
-            significativos para sistemas e infraestructuras críticos debido a su
-            sigilo y persistencia. Si bien varios estudios han analizado las
-            características y los mecanismos de defensa de las APT, este
-            artículo va más allá al proponer un marco de defensa híbrido basado
-            en inteligencia artificial y teoría de juegos. Primero, una revisión
-            bibliográfica describe la evolución, las metodologías y los
-            incidentes conocidos de las APT.
-          </p>
-          <p>
-            <a
-              href="https://doi.org/10.3390/a18070404"
-              target="_blank"
-              rel="noopener"
-              >Acceder al DOI</a
-            >
-          </p>
-          <button class="btn-ref" onclick="mostrarReferencia(6)">
-            Ver referencia APA
-          </button>
-        </article>
-      </section>
-<!-- Sección: Aportes de Daniel Felipe Grisales -->
-<section class="section">
-  <h2>Más artículos seleccionados</h2>
 
-  <!-- Artículo 1 -->
-  <article class="article">
-    <h3 class="titulo">Smartphone-based polyp detection</h3>
-    <p class="resumen">
-      Uso de IA y smartphones para detección de pólipos colorrectales mediante un marco de código abierto accesible.
+  <!-- 5. footer -->
+  <footer class="footer">
+    <p>
+      Septiembre 2025 — estudiantes: Juan Pablo Velásquez Hernández, Daniel,
+      Rodrigo
     </p>
-    <p><b>Autores:</b> Kim, Y. B. (2025)</p>
-    <p><b>Fuente:</b> Journal of Medical Artificial Intelligence</p>
-    <p><b>Palabras clave:</b> AI, Endoscopy, Polyp Detection</p>
-    <button class="btn-ref" onclick="mostrarReferenciaDaniel(1)">Ver referencia APA</button>
-  </article>
+    <button class="btn-color" onclick="cambiarFondo()">
+      Cambiar color de fondo
+    </button>
+    <button class="btn-msg" onclick="mostrarMensaje()">
+      Mostrar mensaje
+    </button>
+  </footer>
 
-  <!-- Artículo 2 -->
-  <article class="article">
-    <h3 class="titulo">Effects of AI assistance on endoscopist performance</h3>
-    <p class="resumen">
-      Análisis de cómo la IA mejora la precisión en la detección de carcinoma esofágico superficial mediante modelos basados en video.
-    </p>
-    <p><b>Autores:</b> Aoyama, N., Nakajo, K., Sasabe, M., Inaba, A., Nakanishi, Y., Seno, H., & Yano, T. (2026)</p>
-    <p><b>Fuente:</b> DEN Open</p>
-    <p><b>Palabras clave:</b> AI, Esophageal Cancer, Endoscopy</p>
-    <button class="btn-ref" onclick="mostrarReferenciaDaniel(2)">Ver referencia APA</button>
-  </article>
-
-  <!-- Artículo 3 -->
-  <article class="article">
-    <h3 class="titulo">AI-assisted Endoscopy and Examiner Confidence</h3>
-    <p class="resumen">
-      Estudio de la interacción humano-IA y la confianza de los examinadores en la endoscopia del esófago de Barrett.
-    </p>
-    <p><b>Autores:</b> Roser, D., Meinikheim, M., Muzalyova, A., et al. (2026)</p>
-    <p><b>Fuente:</b> DEN Open</p>
-    <p><b>Palabras clave:</b> AI, Barrett’s Esophagus, Human-AI Interaction</p>
-    <button class="btn-ref" onclick="mostrarReferenciaDaniel(3)">Ver referencia APA</button>
-  </article>
-
-  <!-- Botones extra -->
-  <button class="btn-color" onclick="contarMisArticulos()">Contar mis artículos</button>
-  <button class="btn-msg" onclick="toggleMisArticulos()">Mostrar/Ocultar mis artículos</button>
-</section>
-      <!-- tabla bibliográfica -->
-      <section class="section">
-        <h2>Datos de la búsqueda</h2>
-
-        <table class="tabla">
-          <tr>
-            <th>Nombre del estudiante</th>
-            <td>Juan Pablo Velásquez Hernández</td>
-          </tr>
-          <tr>
-            <th>Base de datos</th>
-            <td>Scopus</td>
-          </tr>
-          <tr>
-            <th>Cadena de consulta</th>
-            <td>
-              ( ( "artificial intelligence" OR "machine learning" OR "deep
-              learning" ) AND cybersecurity AND "distributed systems" ) AND
-              PUBYEAR > 2022 AND PUBYEAR < 2026
-            </td>
-          </tr>
-          <tr>
-            <th>Cantidad de documentos</th>
-            <td>46</td>
-          </tr>
-        </table>
-
-        <h3 style="margin-top: 1rem">Referencias (APA)</h3>
-        <!-- estilos locales para la tabla -->
-        <table class="tabla" style="margin-top: 0.5rem">
-          <tr>
-            <th>Título</th>
-            <th>Información bibliográfica</th>
-          </tr>
-          <tr>
-            <td>
-              An optimal federated learning-based intrusion detection for IoT
-              environment
-            </td>
-            <td>
-              Karunamurthy, A., Vijayan, K., Kshirsagar, P. R., &amp; Tan, K. T.
-              (2025). An optimal federated learning-based intrusion detection
-              for IoT environment. <em>Scientific Reports, 15</em>(1), 1–15.
-              <a
-                href="https://doi.org/10.1038/s41598-025-93501-8"
-                target="_blank"
-                rel="noopener"
-                >https://doi.org/10.1038/s41598-025-93501-8</a
-              >
-            </td>
-          </tr>
-          <tr>
-            <td>
-              An efficient trustworthy cyberattack defence mechanism system for
-              self guided federated learning framework using attention induced
-              deep convolution neural networks
-            </td>
-            <td>
-              Maghrabi, L. A., Subahi, A., Alghanmi, N. A., Althaqafi, T., Abid,
-              N. J., &amp; Ragab, M. (2025). An efficient trustworthy
-              cyberattack defence mechanism system for self guided federated
-              learning framework using attention induced deep convolution neural
-              networks. <em>Scientific Reports, 15</em>(1), 1–20.
-              <a
-                href="https://doi.org/10.1038/s41598-025-01561-7"
-                target="_blank"
-                rel="noopener"
-                >https://doi.org/10.1038/s41598-025-01561-7</a
-              >
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Federated Learning for Cybersecurity: A Privacy-Preserving
-              Approach
-            </td>
-            <td>
-              Timofte, E. M., Dimian, M., Graur, A., Potorac, A. D., &amp;
-              Balan, D. (2025). Federated learning for cybersecurity: A
-              privacy-preserving approach. <em>Applied Sciences, 15</em>(12),
-              6878.
-              <a
-                href="https://doi.org/10.3390/app15126878"
-                target="_blank"
-                rel="noopener"
-                >https://doi.org/10.3390/app15126878</a
-              >
-            </td>
-          </tr>
-        </table>
-      </section>
-      <!-- tabla bibliográfica de Daniel -->
-<section class="section">
-  <h2>Datos de la búsqueda</h2>
-
-  <table class="tabla">
-    <tr>
-      <th>Nombre del estudiante</th>
-      <td>Daniel Felipe Grisales Corredor</td>
-    </tr>
-    <tr>
-      <th>Base de datos</th>
-      <td>Scopus</td>
-    </tr>
-    <tr>
-      <th>Cadena de consulta</th>
-      <td>TITLE-ABS-KEY("AI VIDEO") AND (LIMIT-TO(DOCTYPE,"ar"))</td>
-    </tr>
-    <tr>
-      <th>Cantidad de documentos</th>
-      <td>3605</td>
-    </tr>
-  </table>
-
-  <h3 style="margin-top: 1rem">Referencias (APA)</h3>
-  <table class="tabla" style="margin-top: 0.5rem">
-    <tr>
-      <th>Título</th>
-      <th>Información bibliográfica</th>
-    </tr>
-    <tr>
-      <td>Smartphone-based polyp detection: a first step towards an open-source AI framework</td>
-      <td>
-        Kim, Y. B. (2025). Smartphone-based polyp detection: a first step towards an open-source AI framework. <em>Journal of Medical Artificial Intelligence, 8</em>, 49. 
-        <a href="https://doi.org/10.21037/jmai-24-310" target="_blank">https://doi.org/10.21037/jmai-24-310</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Effects of artificial intelligence assistance on endoscopist performance</td>
-      <td>
-        Aoyama, N., Nakajo, K., Sasabe, M., Inaba, A., Nakanishi, Y., Seno, H., & Yano, T. (2026). Effects of artificial intelligence assistance on endoscopist performance: Comparison of diagnostic performance in superficial esophageal squamous cell carcinoma detection using video-based models. <em>DEN Open, 6</em>(1), e70083.
-        <a href="https://doi.org/10.1002/deo2.70083" target="_blank">https://doi.org/10.1002/deo2.70083</a>
-      </td>
-    </tr>
-    <tr>
-      <td>Artificial Intelligence-assisted Endoscopy and Examiner Confidence</td>
-      <td>
-        Roser, D., Meinikheim, M., Muzalyova, A., Mendel, R., Palm, C., Probst, A., Nagl, S., Scheppach, M. W., Römmele, C., Schnoy, E., Parsa, N., Byrne, M. F., Messmann, H., & Ebigbo, A. (2026). Artificial Intelligence-assisted Endoscopy and Examiner Confidence: A Study on Human–Artificial Intelligence Interaction in Barrett’s Esophagus. <em>DEN Open, 6</em>(1), e70150. 
-        <a href="https://doi.org/10.1002/deo2.70150" target="_blank">https://doi.org/10.1002/deo2.70150</a>
-      </td>
-    </tr>
-  </table>
-</section>
-
-    </main>
-
-
-    <!-- 5. footer -->
-    <footer class="footer">
-      <p>
-        Septiembre 2025 — estudiantes: Juan Pablo Velásquez Hernández, Daniel,
-        Rodrigo
-      </p>
-      <button class="btn-color" onclick="cambiarFondo()">
-        Cambiar color de fondo
-      </button>
-      <button class="btn-msg" onclick="mostrarMensaje()">
-        Mostrar mensaje
-      </button>
-    </footer>
-
-    <script src="js/app.js"></script>
-  </body>
+  <script src="js/app.js"></script>
+</body>
 </html>
