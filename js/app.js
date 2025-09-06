@@ -1,4 +1,5 @@
 
+//juan pablo:
 // 1) Mostrar referencia según artículo 
 function mostrarReferencia(indice) {
   const referencias = {
@@ -39,8 +40,8 @@ function mostrarReferenciaDaniel(indice) {
 
 // 2) Contar mis artículos
 function contarMisArticulos() {
-  const total = document.querySelectorAll(".section .article").length;
-  alert("Has agregado " + total + " artículos propios.");
+  const total = document.querySelectorAll(".section .article").length+1;
+  alert("Hay " + total + " artículos en el trabajo de base de datos.");
 }
 
 // 3) Mostrar/Ocultar mis artículos
