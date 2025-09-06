@@ -22,7 +22,7 @@
       <h2>Artículos relacionados con machine learning:</h2>
 
       <!-- Artículo 1 -->
-      <article class="article">
+      <article class="article" id="articulo1">
         <h3 class="titulo">
           An optimal federated learning-based intrusion detection for IoT
           environment
@@ -41,10 +41,12 @@
         <button class="btn-ref" onclick="mostrarReferencia(1)">
           Ver referencia APA
         </button>
+        <button class="btn-ref" onclick="exportarPDF('articulo1')">
+            📄 Exportar resumen en PDF </button>
       </article>
 
       <!-- Artículo 2 -->
-      <article class="article">
+      <article class="article" id="articulo2">
         <h3 class="titulo">
           An efficient trustworthy cyberattack defence mechanism system for
           self guided federated learning framework using attention induced
@@ -66,10 +68,12 @@
         <button class="btn-ref" onclick="mostrarReferencia(2)">
           Ver referencia APA
         </button>
+        <button class="btn-ref" onclick="exportarPDF('articulo2')">
+            📄 Exportar resumen en PDF </button>
       </article>
 
       <!-- Artículo 3 -->
-      <article class="article">
+      <article class="article" id="articulo3">
         <h3 class="titulo">
           Federated Learning for Cybersecurity: A Privacy-Preserving Approach
         </h3>
@@ -87,13 +91,15 @@
             <button class="btn-ref" onclick="mostrarReferencia(3)">
               Ver referencia APA
             </button>
+            <button class="btn-ref" onclick="exportarPDF('articulo3')">
+            📄 Exportar resumen en PDF </button>
       </article>
 
       <!--  Rodri - Artículo 4 -->
       <h2 class="section">Articulos relacionados con la IA:</h2>
       <div class="carrusel">
         <div class="carrusel-contenido">
-          <article class="estilo">
+          <article class="estilo" id="articulo4">
             <h3 class="titulo-carrusel">
               Artificial Intelligent Application in Project Management: An
               Algorithm Comparison for Solar Plants Planning Construction
@@ -125,10 +131,12 @@
             <button class="btn-ref" onclick="mostrarReferencia(4)">
               Ver referencia APA
             </button>
-          </article>
+            <button class="btn-ref" onclick="exportarPDF('articulo4')">
+            📄 Exportar resumen en PDF </button>
+           </article>
 
           <!-- Artículo 5 -->
-          <article class="estilo">
+          <article class="estilo" id="articulo5">
             <h3 class="titulo-carrusel">
               Exploring the Role of Artificial Intelligence in Detecting Advanced
               Persistent Threats
@@ -152,10 +160,12 @@
             <button class="btn-ref" onclick="mostrarReferencia(5)">
               Ver referencia APA
             </button>
+            <button class="btn-ref" onclick="exportarPDF('articulo5')">
+            📄 Exportar resumen en PDF </button>
           </article>
 
           <!-- Artículo 6 -->
-          <article class="estilo">
+          <article class="estilo" id="articulo6">
             <h3 class="titulo-carrusel">
               Unveiling the Shadows—A Framework for APT’s Defense AI and Game
               Theory Strategy
@@ -176,6 +186,8 @@
             <button class="btn-ref" onclick="mostrarReferencia(6)">
               Ver referencia APA
             </button>
+            <button class="btn-ref" onclick="exportarPDF('articulo6')">
+            📄 Exportar resumen en PDF </button>
           </article>
         </div>
       </div>
@@ -423,7 +435,7 @@
   <footer class="footer">
     <p>
       Septiembre 2025 — estudiantes: Juan Pablo Velásquez Hernández, Daniel Felipe Grisales,
-      Rodrigo
+      Rodrigo Muñoz Andrade
     </p>
     <button class="btn-color" onclick="cambiarFondo()">
       Cambiar color de fondo
@@ -431,8 +443,11 @@
     <button class="btn-msg" onclick="mostrarMensaje()">
       Mostrar mensaje
     </button>
+    <button class="btn-color" onclick="modoOscuro()">🌙 Modo oscuro</button>
   </footer>
 
   <script src="js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
 </body>
 </html>

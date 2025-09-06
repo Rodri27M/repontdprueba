@@ -71,5 +71,40 @@ function carrusel(){
   //indice = (indice + 1) % articulos.length;
   
 }
-//carrusel();
+;
   setInterval(carrusel, 5000);
+
+async function exportarPDF(idArticulo) {
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF();
+  const articulo = document.getElementById(idArticulo);
+  doc.setFontSize(14);
+  doc.text("Resumen", 20, 20);
+  const titulo = articulo.querySelector("h3").innerText;
+  const resumen = articulo.querySelector(".resumen").innerText;
+  const enlace = articulo.querySelector("a").href;
+  doc.setFontSize(12);
+  let y = 35;
+  doc.text("Título: " + titulo, 20, y); y += 10;
+  doc.text("Resumen:", 20, y); y += 10;
+  let lineas = doc.splitTextToSize(resumen, 170);
+  doc.text(lineas, 20, y);
+  y += lineas.length * 8;
+  doc.text("DOI: " + enlace, 20, y);
+  doc.save("resumen.pdf");
+}
+
+function modoOscuro() {
+  document.body.classList.toggle("dark-mode");
+  if (document.body.classList.contains("dark-mode")) {
+    localStorage.setItem("modo", "oscuro");
+  } else {
+    localStorage.setItem("modo", "claro");
+  }
+}
+window.onload = () => {
+  if (localStorage.getItem("modo") === "oscuro") {
+    document.body.classList.add("dark-mode");
+  }
+};
+
